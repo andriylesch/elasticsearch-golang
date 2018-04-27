@@ -34,5 +34,4 @@ func InitConfig() {
 
 	// Assign env variables value to global variables
 	ElasticHost = viper.GetString("ELASTIC_HOST")
-
 }

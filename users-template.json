@@ -1,0 +1,29 @@
+// You can copy a template of user into `https://www.json-generator.com/` website.
+// and generate list of users for testing 
+
+[
+    '{{repeat(7, 7)}}',
+    {
+        id: '10{{index()}}',
+        firstname: '{{firstName()}}',
+        lastname: '{{surname()}}',
+        age: '{{integer(20, 40)}}',
+        isActive: '{{bool()}}',
+        balance: '{{integer(1000, 20000)}}',
+        email: '{{email()}}',
+        phone: '+1 {{phone()}}'
+    }
+  ]
+
+
+  // OR just reuse the same JSON data what was generated for the post
+
+[
+    {"id":100,"firstname":"Sharlene","lastname":"Moses","age":34,"isActive":false,"balance":16233,"email":"sharlenemoses@tropolis.com","phone":"+1 (952) 481-3178"},
+    {"id":101,"firstname":"Decker","lastname":"Lang","age":34,"isActive":true,"balance":11727,"email":"deckerlang@tropolis.com","phone":"+1 (866) 425-3467"},
+    {"id":102,"firstname":"Garrison","lastname":"Cantrell","age":22,"isActive":true,"balance":18590,"email":"garrisoncantrell@tropolis.com","phone":"+1 (855) 543-2448"},
+    {"id":103,"firstname":"Hahn","lastname":"Holt","age":30,"isActive":false,"balance":2584,"email":"hahnholt@tropolis.com","phone":"+1 (894) 448-2077"},
+    {"id":104,"firstname":"Kirk","lastname":"Leblanc","age":29,"isActive":false,"balance":9785,"email":"kirkleblanc@tropolis.com","phone":"+1 (912) 443-3803"},
+    {"id":105,"firstname":"Chelsea","lastname":"Bowman","age":34,"isActive":false,"balance":13966,"email":"chelseabowman@tropolis.com","phone":"+1 (819) 589-3792"},
+    {"id":106,"firstname":"Amber","lastname":"Silva","age":28,"isActive":false,"balance":18244,"email":"ambersilva@tropolis.com","phone":"+1 (963) 531-2615"}
+]
